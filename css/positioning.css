@@ -42,7 +42,7 @@ menu {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 .first-baby {
   display: flex;
@@ -186,7 +186,7 @@ p {
   cursor: not-allowed;
   transform: scale(1);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
 }
 .is-hidden {
   visibility: hidden;
@@ -197,15 +197,14 @@ p {
 .modal {
   position: absolute;
   width: 528px;
-  height: 581px;
-  left: 536px;
-  right: 536px;
-  top: 221px;
+  min-height: 581px;
+  left: 35%;
+  top: 20%;
   background: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  bottom: 222px;
+
   cursor: auto;
   margin: auto;
 }
@@ -218,4 +217,66 @@ p {
   top: 8px;
   left: 91%;
   cursor: pointer;
+}
+
+.user-agreement {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.checkbox-input {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.checkbox-vector {
+  display: inline-block;
+  border: 2px solid var(--font-color);
+  border-radius: 2px;
+  vertical-align: sub;
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+}
+.vector {
+  display: block;
+  width: 16px;
+  height: 15px;
+}
+.checkbox-user-agreement {
+  display: inline;
+  margin-left: 8px;
+}
+.reg-link {
+  color: var(--brand-blue);
+  text-decoration: underline;
+}
+.checkbox-input:checked + .checkbox-vector {
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--brand-blue);
+  border-color: var(--brand-blue);
+}
+.form-submit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.78;
+  letter-spacing: 0.06em;
+  color: var(--background-color);
+  background-color: var(--brand-blue);
+  margin: 0 auto;
+  padding: 10px 76px;
+  justify-content: center;
+  display: flex;
+  border-radius: 4px;
+  border-color: var(--brand-blue);
+}
+.form-submit:hover,
+.form-submit:focus {
+  box-shadow: ;
 }
