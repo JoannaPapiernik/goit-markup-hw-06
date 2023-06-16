@@ -234,6 +234,7 @@ p {
   height: 20px;
   position: absolute;
   color: transparent;
+  opacity: 0;
 }
 .checkbox-vector {
   display: inline-block;
