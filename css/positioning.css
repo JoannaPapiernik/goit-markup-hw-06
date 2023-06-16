@@ -198,8 +198,9 @@ p {
   position: absolute;
   width: 528px;
   min-height: 581px;
-  left: 35%;
-  top: 20%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -232,6 +233,7 @@ p {
   width: 20px;
   height: 20px;
   position: absolute;
+  color: transparent;
 }
 .checkbox-vector {
   display: inline-block;
@@ -278,5 +280,5 @@ p {
 }
 .form-submit:hover,
 .form-submit:focus {
-  box-shadow: ;
+  box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.06);
 }
